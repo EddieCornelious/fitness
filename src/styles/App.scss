@@ -1,0 +1,44 @@
+@import "variables";
+@import "responsive";
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  font-size: 10px;
+
+  @include respond(desktop) {
+    font-size: 9px;
+  }
+  @include respond(tab-land) {
+    font-size: 8px;
+  }
+  @include respond(tab-port) {
+    font-size: 7px;
+  }
+  @include respond(phone) {
+    font-size: 6px;
+  }
+}
+
+body {
+  background-color: white;
+  font-family: "Roboto", Tahoma, Sans-Serif;
+  overflow-x: hidden;
+}
+
+a:hover,
+a,
+a::before,
+a:active,
+a:checked,
+a:focus,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}

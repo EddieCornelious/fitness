@@ -1,0 +1,33 @@
+@import "variables";
+.testimony__section {
+  padding: 15rem;
+  display: flex;
+
+  align-items: center;
+  background: #fffefa;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 1)
+    ),
+    url("../images/testimony.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  background-size: cover;
+}
+
+.testimony {
+  color: white;
+  position: relative;
+  text-align: center;
+  height: 100%;
+
+  h3.testimony__text {
+    font-size: 1.5rem;
+  }
+  span {
+    font-size: 5rem;
+    font-weight: 800;
+  }
+}

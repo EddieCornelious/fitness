@@ -1,0 +1,200 @@
+@import "variables";
+
+.plans__section {
+  padding: 10rem 0 13rem 0;
+  background: #fffefa;
+}
+
+.container.plans {
+  @media only screen and (max-width: 991px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.some-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  height: 60rem;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin: 0 auto;
+
+  @media only screen and (max-width: 991px) {
+    max-width: 300px;
+    margin-top: 3rem;
+  }
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(-180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  z-index: 100;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: #777777;
+}
+
+/* Style the back side */
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+  text-transform: uppercase;
+  text-align: center;
+  p,
+  h3,
+  a {
+    display: inline-block;
+    position: absolute;
+
+    transform: translate(-50%, 0%);
+  }
+  p {
+    top: 30%;
+    font-size: 2rem;
+    font-weight: 100;
+  }
+  h3 {
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    font-size: 7rem;
+  }
+  a {
+    text-align: center;
+    background-color: $primary;
+    top: 70%;
+    padding: 2rem 4rem 2rem 4rem;
+    border-radius: 2rem;
+  }
+}
+
+.flip__card__top {
+  height: 45%;
+  width: 100%;
+  background-color: $dark-green;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: screen;
+  position: relative;
+  font-size: 3rem;
+
+  .h1 {
+    display: inline-block;
+    background-color: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    );
+    margin: 0px;
+    padding: 2rem;
+    position: relative;
+    right: 30%;
+    z-index: 20;
+    font-weight: bolder;
+  }
+  .h2 {
+    display: block;
+    background-color: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    );
+    margin: 0px;
+    padding: 2rem;
+    font-weight: bolder;
+  }
+}
+
+.top__text__wrap {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  color: white;
+}
+
+.flip__card__bottom {
+  width: 100%;
+  height: 55%;
+  padding: 3.5rem;
+  background-color: white;
+
+  ul {
+    width: 80%;
+    list-style: none;
+    margin: 0 auto;
+  }
+  ul li {
+    display: block;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  ul li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+  }
+}
+
+._0 .flip__card__top {
+  background-color: black;
+}
+
+._1 .flip__card__top {
+  background-color: $light-pink;
+}
+
+._2 .flip__card__top {
+  background-color: $dark-green;
+}
+
+.__0,
+.__1,
+.__2 {
+  a {
+    background-color: white;
+    color: #777777;
+  }
+}
+
+.__0 {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), black);
+}
+
+.__1 {
+  background: linear-gradient(to left, rgba(255, 170, 150, 1), $light-pink);
+}
+
+.__2 {
+  background: linear-gradient(to left, rgba(52, 200, 88, 1), $dark-green);
+}

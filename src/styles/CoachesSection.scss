@@ -1,0 +1,52 @@
+@import "variables";
+
+.coach__section {
+  padding: 10rem 0 13rem 0;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.77)),
+    url("../images/schedule-bg.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  overflow-x: scroll;
+}
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+th {
+  background: rgba(0, 0, 0, 1);
+  padding: 1rem;
+  text-align: inherit;
+}
+
+.time {
+  font-size: 1.3rem;
+  color: #777777;
+}
+
+.exc__start {
+  background: rgba(0, 0, 0, 1);
+}
+
+.exc {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+th,
+td {
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+
+table,
+th,
+td {
+  border: 1px dotted white;
+  border-collapse: collapse;
+}

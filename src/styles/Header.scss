@@ -1,0 +1,99 @@
+@import "variables";
+@import "responsive";
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)),
+    url("../images/hero.jpg");
+  height: 100vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.title-color {
+  color: $primary;
+}
+nav {
+  background-color: black;
+  color: #fff;
+  font-size: 1.4em;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  z-index: 9999;
+  justify-content: space-around;
+
+  @media only screen and (max-width: 700px) {
+    flex-direction: column;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  ul {
+    margin-bottom: 0;
+    margin-top: 7px;
+  }
+}
+
+nav li {
+  list-style-type: none;
+  margin-left: 2rem;
+  display: inline-block;
+  @media only screen and (max-width: 700px) {
+    display: block;
+    padding-top: 1.5rem;
+  }
+}
+
+.important__hero__text {
+  font-weight: 900;
+  color: $primary;
+}
+
+.nav__wrap {
+  display: flex;
+}
+
+.hero__text__wrap {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+
+  color: white;
+  width: 30%;
+
+  @media only screen and (max-width: 991px) {
+    width: auto;
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  a {
+    padding: 2rem 7rem 2rem 7rem;
+    background-color: rgba(125, 255, 162, 0);
+    display: inline-block;
+    border-radius: 5rem;
+    margin-top: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: background-color color 0.5s ease;
+    border: 1px solid $primary;
+  }
+  a:hover {
+    color: $primary;
+    background-color: black;
+  }
+}

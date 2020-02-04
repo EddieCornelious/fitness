@@ -1,0 +1,17 @@
+@import "variables";
+
+.section__header {
+  padding: 3rem;
+  text-align: center;
+
+  p {
+    color: $primary;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  h3 {
+    font-size: 6rem;
+    text-transform: capitalize;
+  }
+}

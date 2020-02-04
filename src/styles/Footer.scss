@@ -1,0 +1,33 @@
+@import "variables";
+
+.footer__top {
+  background-color: black;
+  padding: 7rem 0;
+  color: white;
+  h4 {
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+.input-group {
+  max-width: 50%;
+  margin: 2rem auto 0 auto;
+
+  .subscribe {
+    background: black;
+    color: white;
+  }
+}
+
+.footer__bottom {
+  min-height: 32rem;
+  font-size: 3rem;
+  background-color: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
