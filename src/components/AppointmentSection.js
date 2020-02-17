@@ -2,7 +2,7 @@ import "../styles/AppointmentSection.scss";
 import React from "react";
 import map from "../images/map.PNG";
 import SectionHeader from "./SectionHeader.js";
-
+console.log(process.env.REACT_APP_MAPS_API_KEY);
 const AppointmentSection = () => {
   return (
     <section className="appointment__section">
@@ -18,7 +18,10 @@ const AppointmentSection = () => {
               className="map"
               frameBorder="0"
               style={{ border: 0 }}
-              src="https://www.google.com/maps/embed/v1/place?q=place_id:EiZTIExvcyBBbmdlbGVzIFN0LCBMb3MgQW5nZWxlcywgQ0EsIFVTQSIuKiwKFAoSCbu2DZjMx8KAETeL7u37VjEcEhQKEgkT2ifcXcfCgBH0CEYlb98v4g&key=AIzaSyDAH8khgaCAXoupZFcKloevQgKYRE-9yXo"
+              src={
+                "https://www.google.com/maps/embed/v1/place?q=place_id:EiZTIExvcyBBbmdlbGVzIFN0LCBMb3MgQW5nZWxlcywgQ0EsIFVTQSIuKiwKFAoSCbu2DZjMx8KAETeL7u37VjEcEhQKEgkT2ifcXcfCgBH0CEYlb98v4g&key=" +
+                process.env.REACT_APP_MAPS_API_KEY
+              }
               allowFullScreen
             />
           </div>
