@@ -1,10 +1,10 @@
-@import "variables";
+@import 'variables';
 
 .coach__section {
   padding: 10rem 0 13rem 0;
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.77)),
-    url("../images/schedule-bg.jpg");
+    url('../images/schedule-bg.jpg');
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,7 +25,6 @@ th {
 }
 
 .time {
-  font-size: 1.3rem;
   color: #777777;
 }
 
@@ -34,7 +33,6 @@ th {
 }
 
 .exc {
-  font-size: 1.5rem;
   text-transform: capitalize;
 }
 

@@ -1,5 +1,5 @@
-@import "variables";
-@import "responsive";
+@import 'variables';
+@import 'responsive';
 
 * {
   margin: 0;
@@ -27,8 +27,9 @@ html {
 }
 
 body {
+  font-size: 1.6rem;
   background-color: white;
-  font-family: "Roboto", Tahoma, Sans-Serif;
+  font-family: 'Roboto', Tahoma, Sans-Serif;
   overflow-x: hidden;
 }
 
