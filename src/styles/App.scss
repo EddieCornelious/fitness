@@ -21,9 +21,6 @@ html {
   @include respond(tab-port) {
     font-size: 7px;
   }
-  @include respond(phone) {
-    font-size: 6px;
-  }
 }
 
 body {

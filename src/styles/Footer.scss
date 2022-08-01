@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 .footer__top {
   background-color: black;
@@ -30,4 +30,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  span {
+    font-size: 1.6rem;
+  }
 }
