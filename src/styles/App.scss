@@ -10,16 +10,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 
   @include respond(desktop) {
-    font-size: 9px;
+    font-size: 56.25%;
   }
   @include respond(tab-land) {
-    font-size: 8px;
+    font-size: 50%;
   }
   @include respond(tab-port) {
-    font-size: 7px;
+    font-size: 43.75%;
   }
 }
 
